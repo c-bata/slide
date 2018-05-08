@@ -1,0 +1,31 @@
+{
+  "name": "talks",
+  "version": "1.0.0",
+  "description": "Slide viewer for my talk.",
+  "main": "src/ts/index.ts",
+  "scripts": {
+    "tsc": "tsc -p .",
+    "webpack": "webpack --optimize-minimize ./src/ts/index.js --output-filename ./public/js/bundle.js",
+    "build": "npm run tsc && npm run webpack",
+    "tslint": "tslint src/ts/*.ts",
+    "compass": "compass watch",
+    "server": "python -m SimpleHTTPServer 8000"
+  },
+  "repository": "git+https://github.com/c-bata/talks.git",
+  "keywords": [],
+  "author": "c-bata",
+  "homepage": "http://c-bata.link",
+  "dependencies": {
+    "@types/react": "^16.0.41",
+    "@types/react-dom": "^16.0.5",
+    "browserify": "^13.3.0",
+    "lodash": "^4.17.10",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "rxjs": "^5.5.10",
+    "tslint": "^3.15.1",
+    "typescript": "^1.8.10",
+    "webpack": "^4.8.1"
+  },
+  "private": true
+}
