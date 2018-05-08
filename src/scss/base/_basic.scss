@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  min-height: 100%;
+}
+body {
+  font-size: 16px;
+  font-family: "Helvetica neue",Arial,Roboto,"Droid Sans","ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+  line-height: 1em;
+  background-color: $color_background;
+  color: $color_primary_text;
+
+  /* sticky footer with flexbox */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $size_max;
+  width: 100%;
+}
+
+b {
+  font-weight: bold;
+}
+
+a {
+  color: $color_secondary_text;
+  text-decoration: none;
+
+  &:hover {
+    color: $color_hint_text;
+  }
+}
+
+/* heading, pargraph, link text */
+h1 {
+  margin: 10px 0px;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+}
+h2 {
+  margin: 10px 0px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+h3 {
+  margin: 10px 0px 1px;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 400;
+}
+h4 {
+  margin: 10px 0px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  margin: 10px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+h6 {
+  margin: 10px 0px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}

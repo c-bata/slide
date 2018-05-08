@@ -1,3 +1,3 @@
-# slide
+# Talks
 
-The source codes for my portfolio web site (https://c-bata.link/slide).
+Slide viewer for my portfolio. See https://c-bata.link/talks

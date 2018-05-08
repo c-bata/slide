@@ -1,0 +1,31 @@
+/* 画面サイズに合わせて並べる画像数を変更
+ * ~ 480px : 1枚, 480~800px : 2枚, 800px ~ : 3枚
+ */
+
+.work-card-list {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+
+  card {
+    width: calc(100% * (1/3) - 10px - 1px);
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+  .work-card-list card {
+    width: calc(100% * (1/2) - 10px - 1px);
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .work-card-list {
+    flex-direction: column;
+
+    card {
+      width: 100%;
+    }
+  }
+}

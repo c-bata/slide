@@ -1,0 +1,30 @@
+$size_max: 980px;
+$size_min: 320px;
+
+/* google web fonts */
+// Don't import this to fix performance issue.
+// @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300);
+// @import url(https://fonts.googleapis.com/css?family=Raleway:300);
+
+/* color */
+$accent_color: #af430a;
+$sub_accent_color: #b0430a;
+$base_color: #2b1b17;
+
+$color_background: #ffffff;
+
+// android material design に合わせる
+$color_primary: #3F51B5;
+$color_primary_dark: #303F9F;
+$color_primary_light: #C5CAE9;
+
+$color_accent: #FF4081;
+$color_accent_dark: #F50057;
+$color_accent_light: #FF80AB;
+/* text color */
+$color_primary_text: rgba(0, 0, 0, 0.87);
+$color_secondary_text: rgba(0, 0, 0, 0.54);
+$color_hint_text: rgba(0, 0, 0, 0.38);
+$color_disabled_text: rgba(0, 0, 0, 0.38);
+/* file path */
+$img_path: "../../../img/";

@@ -1,0 +1,21 @@
+$grid_size: 12;
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  @include clearfix;
+}
+
+.grid {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @for $i from 1 through $grid_size {
+    &-#{$i} {
+      float: left;
+      width: $i / $grid_size * 100%;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+header {
+  position: relative;
+}
+
+nav {
+  background-color: #222222;
+
+  .container {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+  }
+}
+
+.nav-brand {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;  // 左寄せ
+  align-items: center;  // 垂直方向に中央寄せ
+
+  .name {
+    font-family: "Raleway", "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 15px;
+  }
+}
+
+.nav {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-end;  // 右寄せ
+  align-items: center;  // 垂直方向に中央寄せ
+
+  a, button {
+    font-family: "Raleway", "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    border-style: none;
+    padding: 15px;
+    display: block;
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
+
+    &:hover {
+      border-bottom: 5px solid #ffffff;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    justify-content: space-between;
+  }
+
+  nav > .container {
+    flex-direction: column;
+  }
+
+  .nav-brand {
+    display: none;
+  }
+}
+
